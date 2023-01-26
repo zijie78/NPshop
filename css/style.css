@@ -66,6 +66,14 @@ footer {                                  /*Footer*/
 	left: 0!important;
 }
 
+div.terms{
+	width:60%;
+	right:0;
+	display: flex;
+
+	
+}
+
 @media screen and (max-width: 425px) {
 	header h1 {
 		font-size: 16px;

@@ -67,10 +67,10 @@ footer {                                  /*Footer*/
 }
 
 div.terms{
-	width:60%;
+	width:90%;
 	right:0;
 	display: flex;
-
+	align-self: center;
 	
 }
 

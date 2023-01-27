@@ -12,14 +12,22 @@
 </head>
 <body>
 		<div class="main_div">
-            <div class="title">Login</div>
+            <div class="title">Create New Account</div>
             <form action="#">
+                <div class="input_box">
+                    <input type="text" placeholder="Username" required>
+                    <div class="icon"><i class="fas fa-user"></i></div>
+                  </div>
               <div class="input_box">
-                <input type="text" placeholder="NP Email" required>
+                <input type="email" placeholder="NP Email" required>
                 <div class="icon"><i class="fas fa-user"></i></div>
               </div>
               <div class="input_box">
                 <input type="password" placeholder="Password" required>
+                <div class="icon"><i class="fas fa-lock"></i></div>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Re-Enter Password" required>
                 <div class="icon"><i class="fas fa-lock"></i></div>
               </div>
               <div class="option_div">
@@ -29,10 +37,12 @@
                 </div>
               </div>
               <div class="input_box button">
-                <input type="submit" value="Login">
+                <input type="submit" value="Create Account">
               </div>
               <div class="sign_up">
-                Sign up for an account <a href="sign.html">Click here</a>
+                <p>By creating an account you agree to our <a href="termsandcondition.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <br>
+                Existing User? Login <a href="login.html">Click here</a>
               </div>
             </form>
           </div>

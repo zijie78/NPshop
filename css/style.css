@@ -4,7 +4,7 @@ body { margin: 0 auto; }
 
 header {                                    /*Header*/
 	height: 70px;                         
-	background-color: #3e739d;
+	background-color: #4646A0;
 	border-bottom: 1px solid #494949;
 	display: flex;
 	align-items: center;
@@ -21,7 +21,7 @@ header > .top {
 	left: 20px;
 }
 header > .top a.menu_icon i {               /*Menu on the side */
-	color: #000;
+	color: #FFFFFF;
 	font-size: 40px;
 	padding-top: 5px;
 	transition: .2s ease;
@@ -51,8 +51,8 @@ main {
 	box-sizing: border-box;
 }
 footer {                                  /*Footer*/
-	height: 50px;
-	background-color: #494949;
+	height: 40px;
+	background-color: #EBCE16;
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -76,4 +76,65 @@ footer {                                  /*Footer*/
 		width: 100%;
 		left: -100%; 
 	}
+}
+main > h1{
+	color: #040486;
+	text-align:center;
+}
+main > p{
+	text-align: center;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }

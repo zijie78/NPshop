@@ -4,7 +4,7 @@ body { margin: 0 auto; }
 
 header {                                    /*Header*/
 	height: 70px;                         
-	background-color: #3e739d;
+	background-color: #4646A0;
 	border-bottom: 1px solid #494949;
 	display: flex;
 	align-items: center;
@@ -51,8 +51,8 @@ main {
 	box-sizing: border-box;
 }
 footer {                                  /*Footer*/
-	height: 50px;
-	background-color: #494949;
+	height: 40px;
+	background-color: #EBCE16;
 	color: #fff;
 	display: flex;
 	align-items: center;

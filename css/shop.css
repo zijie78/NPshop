@@ -26,7 +26,7 @@
 
 .showcase:before {
     content:'';
-    background: url('../image/NP.jpg') no-repeat center
+    background: url('../image/ngee-ann-poly.avif') no-repeat center
     center/cover;
     position:absolute;
     top: 0;

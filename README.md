@@ -1,8 +1,5 @@
 # NPshop
 
-
-
-
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
 Essentially, this part is your sales pitch.
@@ -10,7 +7,6 @@ Essentially, this part is your sales pitch.
 <h2>Design Process</h2>
 
 For the checkpoint 1, we have created the various html, css and javascript. We have decided to add the navigation bar on all the html except for login.html and signup.html because those 2 html will be for user to create or sign in their account to continue using the website. We have implemented a few features such as games (random gift generator), flip card for the contact and many other features. We have also created the wireframes for the html in both desktop and mobile view.
-
 
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -57,3 +53,7 @@ The photos used in this site were obtained from ...
 
 <h2>Acknowledgements</h2>
 I received inspiration for this project from X
+
+<h2>Collaborators</h2>
+Goh Zi Jie (zijie78)
+Natalie Peh (Nattt0101)

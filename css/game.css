@@ -19,14 +19,14 @@
 
 .showcase{
     background-color: var(--primary-color);
-    color: #EBCE16;
+    color: #ffffff;
     height: 100vh;
     position: relative;
 }
 
 .showcase:before {
     content:'';
-    background: #fff no-repeat center
+    background: #000000 no-repeat center
     center/cover;
     position:absolute;
     top: 0;

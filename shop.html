@@ -1,38 +1,755 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/shop.css">
-    <link rel="stylesheet" href="css/shopmenu.css">
-    <title>Shop</title>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="css/shop.css">
+
 </head>
 <body>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                         <li><a href="index.html">Home</a></li>
-                         <li><a href="login.html">Login</a></li>
-                         <li><a href="shop.html">Shop</a></li>
-                         <li><a href="cart.html">My Cart</a></li>
-                         <li><a href="game.html">Game</a></li>
-                         <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+<!-- partial:index.partial.html -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<div id="wrapper">
+
+<div class="cart-icon-top">
+</div>
+<div class="cart-icon-bottom">
+</div>
+
+<div id="sidebar">
+	<h3>CART</h3>
+    <div id="cart">
+    	<span class="empty">No items in cart.</span>       
+    </div>
+
+    <div id="checkout">
+        CHECKOUT
+    </div>
+
+<div id="grid-selector">
+       <div id="grid-menu">
+       	   View:
+           <ul>           	   
+               <li class="largeGrid"><a href=""></a></li>
+               <li class="smallGrid"><a class="active" href=""></a></li>
+           </ul>
+       </div>
+       
+       
+</div>
+
+<div id="grid">
+    <div class="product">
+    	<div class="info-large">
+        	<h4>ITEM 1</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$29.99</span> $19.99
+            </div>
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>                        
+                         
+            <button class="add-cart-large">Add To Cart</button>       
+        </div>
+        <div class="make3D">
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1.jpg" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>                
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>   <!--Enter price here-->
+                        <span class="product_name">ITEM 1</span>   <!--Enter product name here--> 
+                        <p>T-Shirt</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+                    </div>                       
+                </div>                         
             </div>
         </div>
+            <!--When you click view gallery, how many images-->
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
     </div>
-    <header class="showcase">
-        <div class="container showcase-inner">
-            <h1>About Us</h1>
-            <p>Ngee Ann Polytechnic.  Be Part Of Xtra. A Poly Like No Others. Click on the read more below to find out more.</p>
-            <a href="https://www.np.edu.sg" target="_blank" class="btn">Read More</a>
+    
+    
+    <div class="product">
+    <div class="info-large">
+        	<h4>ITEM 2</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$29.99</span> $19.99
+            </div>
+             
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            
+            <button class="add-cart-large">Add To Cart</button>                          
+                         
         </div>
-    </header>
+        <div class="make3D">
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2.jpg" alt="" />  <!--Displayed-->
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>
+                        <span class="product_name">ITEM 2</span>    
+                        <p>T-Shirt</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            <!--When you click view gallery, how many images-->
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/4.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
+    </div>
+    
+    <div class="product">
+    <div class="info-large">
+        	<h4>ITEM 3</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$29.99</span> $19.99
+            </div>
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            
+            <button class="add-cart-large">Add To Cart</button>                          
+                         
+        </div>
+        <div class="make3D">        
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3.jpg" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>
+                        <span class="product_name">ITEM 3</span>    
+                        <p>T-Shirt</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/4.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
+    </div>
+    
+    
+    <div class="product">
+    <div class="info-large">
+        	<h4>ITEM 4</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$49.99</span> $39.99
+            </div>
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            
+            <button class="add-cart-large">Add To Cart</button>                          
+                         
+        </div>
+        <div class="make3D">
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/4.jpg" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>
+                        <span class="product_name">ITEM 4</span>    
+                        <p>Polo T-Shirt</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/4.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/6.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
+    </div>
+    
+    <div class="product">
+    <div class="info-large">
+        	<h4>ITEM 5</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$59.99</span> $49.99
+            </div>
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            
+            <button class="add-cart-large">Add To Cart</button>                          
+                         
+        </div>
+        <div class="make3D">
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/5.jpg" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>
+                        <span class="product_name">ITEM 5</span>    
+                        <p>Windbreaker</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+                        <strong>COLORS</strong>
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/5.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
+    </div>
+    
+    
+    <div class="product">
+    <div class="info-large">
+        	<h4>ITEM 6</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$29.99</span> $19.99
+            </div>
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            
+            <button class="add-cart-large">Add To Cart</button>                          
+                         
+        </div>
+        <div class="make3D">
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/6.jpg" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>
+                        <span class="product_name">ITEM 6</span>    
+                        <p>T-Shirt</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+                        <strong>COLORS</strong>
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/6.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
+    </div>
+    
+    <div class="product">
+    <div class="info-large">
+        	<h4>ITEM 7</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$29.99</span> $19.99
+            </div>
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            
+            <button class="add-cart-large">Add To Cart</button>                          
+                         
+        </div>
+        <div class="make3D">
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>
+                        <span class="product_name">ITEM 7</span>    
+                        <p>T-Shirt</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+                        <strong>COLORS</strong>
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/5.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/4.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
+    </div>
+    
+    <div class="product">
+    <div class="info-large">
+        	<h4>ITEM 8</h4>
+            <div class="sku">
+            	PRODUCT SKU: <strong>89356</strong>
+            </div>
+             
+            <div class="price-big">
+            	<span>$29.99</span> $19.99
+            </div>
+
+            <h3>SIZE</h3>
+            <div class="sizes-large">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            
+            <button class="add-cart-large">Add To Cart</button>                          
+                         
+        </div>
+        <div class="make3D">
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/8.jpg" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <div class="view_gallery">View gallery</div>
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">$x</span>
+                        <span class="product_name">ITEM 8</span>    
+                        <p>T-Shirt</p>                                            
+                        
+                        <div class="product-options">
+                        <strong>SIZES</strong>
+                        <span>S, M, L, XL</span>
+                        <strong>COLORS</strong>
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            
+            <div class="product-back">
+                <div class="shadow"></div>
+                <div class="carousel">
+                    <ul class="carousel-container">
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/8.jpg" alt="" /></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" /></li>
+                    </ul>
+                    <div class="arrows-perspective">
+                        <div class="carouselPrev">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                        <div class="carouselNext">
+                            <div class="y"></div>
+                            <div class="x"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+            </div>	  
+        </div>	
+    </div>    
+
+    <div class="product">
+        <div class="info-large">
+                <h4>ITEM 9</h4>
+                <div class="sku">
+                    PRODUCT SKU: <strong>89356</strong>
+                </div>
+                 
+                <div class="price-big">
+                    <span>$29.99</span> $19.99
+                </div>
+    
+                <h3>SIZE</h3>
+                <div class="sizes-large">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                
+                <button class="add-cart-large">Add To Cart</button>                          
+                             
+            </div>
+            <div class="make3D">
+                <div class="product-front">
+                    <div class="shadow"></div>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/8.jpg" alt="" />
+                    <div class="image_overlay"></div>
+                    <div class="add_to_cart">Add to cart</div>
+                    <div class="view_gallery">View gallery</div>
+                    <div class="stats">        	
+                        <div class="stats-container">
+                            <span class="product_price">$x</span>
+                            <span class="product_name">ITEM 9</span>    
+                            <p>T-Shirt</p>                                            
+                            
+                            <div class="product-options">
+                            <strong>SIZES</strong>
+                            <span>S, M, L, XL</span>
+                            <strong>COLORS</strong>
+                        </div>                       
+                        </div>                         
+                    </div>
+                </div>
+                
+                <div class="product-back">
+                    <div class="shadow"></div>
+                    <div class="carousel">
+                        <ul class="carousel-container">
+                            <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/8.jpg" alt="" /></li>
+                            <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" /></li>
+                        </ul>
+                        <div class="arrows-perspective">
+                            <div class="carouselPrev">
+                                <div class="y"></div>
+                                <div class="x"></div>
+                            </div>
+                            <div class="carouselNext">
+                                <div class="y"></div>
+                                <div class="x"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-back">
+                        <div class="cy"></div>
+                        <div class="cx"></div>
+                    </div>
+                </div>	  
+            </div>	
+        </div>
+
+        <div class="product">
+            <div class="info-large">
+                    <h4>ITEM 10</h4>
+                    <div class="sku">
+                        PRODUCT SKU: <strong>89356</strong>
+                    </div>
+                     
+                    <div class="price-big">
+                        <span>$29.99</span> $19.99
+                    </div>
+        
+                    <h3>SIZE</h3>
+                    <div class="sizes-large">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                    </div>
+                    
+                    <button class="add-cart-large">Add To Cart</button>                          
+                                 
+                </div>
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/8.jpg" alt="" />
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="view_gallery">View gallery</div>
+                        <div class="stats">        	
+                            <div class="stats-container">
+                                <span class="product_price">$x</span>
+                                <span class="product_name">ITEM 10</span>    
+                                <p>T-Shirt</p>                                            
+                                
+                                <div class="product-options">
+                                <strong>SIZES</strong>
+                                <span>S, M, L, XL</span>
+                                <strong>COLORS</strong>
+                            </div>                       
+                            </div>                         
+                        </div>
+                    </div>
+                    
+                    <div class="product-back">
+                        <div class="shadow"></div>
+                        <div class="carousel">
+                            <ul class="carousel-container">
+                                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/8.jpg" alt="" /></li>
+                                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/7.jpg" alt="" /></li>
+                            </ul>
+                            <div class="arrows-perspective">
+                                <div class="carouselPrev">
+                                    <div class="y"></div>
+                                    <div class="x"></div>
+                                </div>
+                                <div class="carouselNext">
+                                    <div class="y"></div>
+                                    <div class="x"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="cy"></div>
+                            <div class="cx"></div>
+                        </div>
+                    </div>	  
+                </div>	
+            </div>
+</div>
+</div>
+    
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- partial -->
+  <script  src="js/shop.js"></script>
+
 </body>
 </html>

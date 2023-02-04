@@ -237,7 +237,7 @@ $(document).ready(function(){
 			$("body").removeClass("MakeFloatingCart");
 
 
-			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>$39</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
+			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>$19</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
 
 			$("#cart .empty").hide();			
 			$("#cart").append(cartItem);

@@ -743,7 +743,7 @@ div.cart-icon-top{
 	width:21px;
 	height:3px;
 	z-index:1;
-	top: 47px;
+	top: 50px;
 	left: 120px;
 }
 div.cart-icon-bottom{
@@ -753,7 +753,7 @@ div.cart-icon-bottom{
 	width:21px;
 	height:19px;
 	z-index:1;
-	top: 50px;
+	top: 53px;
 	left: 120px;
 }
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}
@@ -823,7 +823,7 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 	font-weight: 700;
 	padding: 3px 9px;
 	position: absolute;
-	top: 43px;
+	top: 45px;
 	left: 181px;
 	color: #5ff7d2;
 	display:none;
@@ -1004,3 +1004,4 @@ div.sku strong{
     position: absolute;
     margin: 3px;
 }
+

@@ -1,18 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+:root {
+    --primary-color: rgba(13, 110, 139, 0.50);
+    --overlay-color: rgba(198, 198, 198, 0.85);
+    --menu-speed: 0.75s;
+}
+
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	background: #f6f5f7;
+	background: #dcdbdb;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
+	block-size: 100vh;
 	margin: -20px 0 50px;
 }
 
@@ -77,7 +84,7 @@ form {
 	justify-content: center;
 	flex-direction: column;
 	padding: 0 50px;
-	height: 100%;
+	block-size: 100%;
 	text-align: center;
 }
 
@@ -86,7 +93,7 @@ input {
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
-	width: 100%;
+	inline-size: 100%;
 }
 
 .container {
@@ -96,21 +103,21 @@ input {
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
-	min-height: 480px;
+	inline-size: 768px;
+	max-inline-size: 100%;
+	min-block-size: 480px;
 }
 
 .form-container {
 	position: absolute;
-	top: 0;
-	height: 100%;
+	inset-block-start: 0;
+	block-size: 100%;
 	transition: all 0.6s ease-in-out;
 }
 
 .sign-in-container {
-	left: 0;
-	width: 50%;
+	inset-inline-start: 0;
+	inline-size: 50%;
 	z-index: 2;
 }
 
@@ -119,8 +126,8 @@ input {
 }
 
 .sign-up-container {
-	left: 0;
-	width: 50%;
+	inset-inline-start: 0;
+	inline-size: 50%;
 	opacity: 0;
 	z-index: 1;
 }
@@ -146,10 +153,10 @@ input {
 
 .overlay-container {
 	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
+	inset-block-start: 0;
+	inset-inline-start: 50%;
+	inline-size: 50%;
+	block-size: 100%;
 	overflow: hidden;
 	transition: transform 0.6s ease-in-out;
 	z-index: 100;
@@ -168,9 +175,9 @@ input {
 	background-position: 0 0;
 	color: #FFFFFF;
 	position: relative;
-	left: -100%;
-	height: 100%;
-	width: 200%;
+	inset-inline-start: -100%;
+	block-size: 100%;
+	inline-size: 200%;
   	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
@@ -187,9 +194,9 @@ input {
 	flex-direction: column;
 	padding: 0 40px;
 	text-align: center;
-	top: 0;
-	height: 100%;
-	width: 50%;
+	inset-block-start: 0;
+	block-size: 100%;
+	inline-size: 50%;
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
@@ -203,7 +210,7 @@ input {
 }
 
 .overlay-right {
-	right: 0;
+	inset-inline-end: 0;
 	transform: translateX(0);
 }
 
@@ -222,18 +229,18 @@ input {
 	justify-content: center;
 	align-items: center;
 	margin: 0 5px;
-	height: 40px;
-	width: 40px;
+	block-size: 40px;
+	inline-size: 40px;
 }
 
 footer {
     background-color: #222;
     color: #fff;
     font-size: 14px;
-    bottom: 0;
+    inset-block-end: 0;
     position: fixed;
-    left: 0;
-    right: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     text-align: center;
     z-index: 999;
 }
@@ -250,3 +257,5 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+

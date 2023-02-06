@@ -9,6 +9,7 @@
 <body>
     <audio autoplay="" loop="" src="music/Joy To The World - DJ Williams.mp3"></audio>
 <!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <div id="wrapper">
 <div class="cart-icon-top">
@@ -26,7 +27,8 @@
         <li><a href="index.html">HOME</a></li>
         <li><a href="cart.html">CART</a></li>
         <li><a href="game.html">GAME</a></li>
-        <li><a href="contact.html">CONTACT</a></li>                                              
+        <li><a href="contact.html">CONTACT</a></li> 
+        <li><a href="profile.html">PROFILE</a></li>                                             
     </ul>		
 </div>
 
@@ -56,7 +58,13 @@
                         <div class="product-options">
                         <strong>SIZES</strong>
                         <span>S, M, L, XL, XXL</span>
-                    </div>                       
+                        
+                    </div>        
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>  
                     </div>                         
                 </div>
             </div>
@@ -106,7 +114,12 @@
                         <div class="product-options">
                         <strong>SIZES</strong>
                         <span>S, M, L, XL, XXL</span>
-                    </div>                       
+                    </div>          
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>              
                     </div>                         
                 </div>
             </div>
@@ -156,7 +169,12 @@
                         <div class="product-options">
                         <strong>SIZES</strong>
                         <span>S, M, L, XL, XXL</span>
-                    </div>                       
+                    </div>               
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>         
                     </div>                         
                 </div>
             </div>
@@ -207,7 +225,12 @@
                         <div class="product-options">
                         <strong>SIZES</strong>
                         <span>S, M, L, XL, XXL</span>
-                    </div>                       
+                    </div>                 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>       
                     </div>                         
                 </div>
             </div>
@@ -237,6 +260,26 @@
             </div>	  
         </div>	
     </div>
+
+    <form action="action_page.php">
+        <div class="container">
+          <h2>Subscribe to us for Newest Updates!</h2>
+          <p>it's free...</p>
+        </div>
+      
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Get Promotion Updates
+          </label>
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- partial -->

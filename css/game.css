@@ -25,7 +25,7 @@
   }
   body {
     block-size: 100vh;
-    background: linear-gradient(135deg, #c3a3f1, #6414e9);
+    background: linear-gradient(135deg, #a3e7f1, #f3e6e6);
   }
   .wrapper {
     inline-size: 90%;
@@ -66,8 +66,8 @@
     border-radius: 50%;
     cursor: pointer;
     border: 0;
-    background: radial-gradient(#fdcf3b 50%, #d88a40 85%);
-    color: #c66e16;
+    background: radial-gradient(#7b1cc4 50%, #112397 85%);
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 1.8em;
     letter-spacing: 0.1em;

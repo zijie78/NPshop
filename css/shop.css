@@ -6,20 +6,20 @@ body {
 }
 #wrapper{
 	overflow: hidden;
-	height: 1153px;
-	width: 1643px;
+	block-size: 1153px;
+	inline-size: 1643px;
 	background:#fff;
 }
 #header{
-	height:92px; 
+	block-size:92px; 
 	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header-icons.png") 1448px -2px no-repeat;
-	border-bottom:1px solid #eee;
+	border-block-end:1px solid #eee;
 }
 #header ul{padding:33px 0 0 45px;}
 #header li{
 	list-style:none;
-	float:left;
-	margin-right:30px;	
+	float:inline-start;
+	margin-inline-end:30px;	
 }
 #header li a{
 	font-weight:700;
@@ -35,19 +35,19 @@ body {
 }
 
 #grid{	
-	width: 1335px;
+	inline-size: 1335px;
 	position: absolute;
-	left: 340px;
-	height: 100px;
-	top: 180px;
+	inset-inline-start: 340px;
+	block-size: 100px;
+	inset-block-start: 180px;
 }
 #sidebar{
-	float:left;
+	float:inline-start;
 	background:#fff;
-	width:275px;	
+	inline-size:275px;	
 	padding:13px 0 0 45px;
-	height:400px;
-	border-right:1px solid #eee;
+	block-size:400px;
+	border-inline-end:1px solid #eee;
 }
 #sidebar h3{
 	color:#262626;
@@ -76,11 +76,11 @@ body {
 	padding: 7px 0 7px 23px;
 }
 .checklist li span{
-	float:left;
-	width:11px;
-	height:11px;
-	margin-left:-23px;
-	margin-top:4px;
+	float:inline-start;
+	inline-size:11px;
+	block-size:11px;
+	margin-inline-start:-23px;
+	margin-block-start:4px;
 	border: 1px solid #d1d3d7;
 	position:relative;	
 }
@@ -119,21 +119,21 @@ body {
 	     -o-transition: all 300ms ease-out;
 	        transition: all 300ms ease-out;
 }
-.checklist a span span{border:none;margin:0;float:none; position:absolute;top:0;left:0;}
+.checklist a span span{border:none;margin:0;float:none; position:absolute;inset-block-start:0;inset-inline-start:0;}
 .checklist a .x{
 	display:block;
-	width:0;	 
-	height:2px;
+	inline-size:0;	 
+	block-size:2px;
 	background:#5ff7d2;
-	top:6px;
-	left:2px;	
+	inset-block-start:6px;
+	inset-inline-start:2px;	
 	-ms-transform: rotate(45deg); 
    	-webkit-transform: rotate(45deg); 
     transform: rotate(45deg);	
 	-webkit-transition: all 50ms ease-out;
 }
 .checklist a .x.animate{
-	width:4px;
+	inline-size:4px;
 	-webkit-transition: all 100ms ease-in;
 	   -moz-transition: all 100ms ease-in;
 	    -ms-transition: all 100ms ease-in;
@@ -142,18 +142,18 @@ body {
 }
 .checklist a .y{
 	display:block;
-	width:0px; 
-	height:2px;
+	inline-size:0px; 
+	block-size:2px;
 	background:#5ff7d2;
-	top:4px;
-	left:3px;	
+	inset-block-start:4px;
+	inset-inline-start:3px;	
 	-ms-transform: rotate(13deg); 
    	-webkit-transform: rotate(135deg); 
     transform: rotate(135deg);	
 	-webkit-transition: all 50ms ease-out;
 }
 .checklist a .y.animate{
-	width:8px;
+	inline-size:8px;
 	-webkit-transition: all 100ms ease-out;
 	   -moz-transition: all 100ms ease-out;
 	    -ms-transition: all 100ms ease-out;
@@ -164,49 +164,49 @@ body {
 	border-color:#8d939f;
 }
 .colors ul, .sizes ul{
-	float:left; width:130px;	
+	float:inline-start; inline-size:130px;	
 }
-.colors ul li{padding-left:21px;}
+.colors ul li{padding-inline-start:21px;}
 .colors a span{
 	border:none;
 	position:relative;
 	border-radius:100%;
 	background-color:#eae3d3;
-	width:13px;
-	height:13px;
-	margin-left:-20px;
+	inline-size:13px;
+	block-size:13px;
+	margin-inline-start:-20px;
 }
 .colors a:hover span{
-	width:15px;
-	height:15px;
-	margin-top:3px;
-	margin-left:-21px;
+	inline-size:15px;
+	block-size:15px;
+	margin-block-start:3px;
+	margin-inline-start:-21px;
 }
-#sidebar img{margin-top:6px;}
+#sidebar img{margin-block-start:6px;}
 
 .product{
     position: relative;
     perspective: 800px;
-    width:306px;
-    height:471px;
+    inline-size:306px;
+    block-size:471px;
     transform-style: preserve-3d;
     transition: transform 5s;
-	float:left; 
-	margin-right: 23px;
+	float:inline-start; 
+	margin-inline-end: 23px;
 	-webkit-transition: width 500ms ease-in-out;
 	   -moz-transition: width 500ms ease-in-out;
 		-ms-transition: width 500ms ease-in-out;
 		 -o-transition: width 500ms ease-in-out;
  		    transition: width 500ms ease-in-out;
 }
-.product-front img{width:100%;}
+.product-front img{inline-size:100%;}
 .product-front, .product-back{
-	width:315px;
-	height:480px;
+	inline-size:315px;
+	block-size:480px;
 	background:#fff;
 	position:absolute;
-	left:-5px;
-	top:-5px;
+	inset-inline-start:-5px;
+	inset-block-start:-5px;
 	-webkit-transition: all 100ms ease-out; 
        -moz-transition: all 100ms ease-out; 
          -o-transition: all 100ms ease-out; 
@@ -219,19 +219,19 @@ body {
 .make3D.animate .product-back,
 .make3D.animate .product-front,
 div.large .product-back{
-	top:0px;
-	left:0px;
+	inset-block-start:0px;
+	inset-inline-start:0px;
 	-webkit-transition: all 100ms ease-out; 
        -moz-transition: all 100ms ease-out; 
          -o-transition: all 100ms ease-out; 
             transition: all 100ms ease-out; 
 }
 .make3D{
-	width:305px;
-	height:470px;
+	inline-size:305px;
+	block-size:470px;
 	position:absolute;    
-	top:10px;
-	left:10px;	
+	inset-block-start:10px;
+	inset-inline-start:10px;	
 	overflow:hidden;
     transform-style: preserve-3d;
 	-webkit-transition:  100ms ease-out; 
@@ -268,10 +268,10 @@ div.make3D.flip180{
 			   transition:  150ms ease-out; 			
 }
 .make3D.animate{
-	top:5px;
-	left:5px;
-	width:315px;
-	height:480px;
+	inset-block-start:5px;
+	inset-inline-start:5px;
+	inline-size:315px;
+	block-size:480px;
 	box-shadow:0px 5px 31px -1px rgba(0, 0, 0, 0.15);
 	-webkit-transition:  100ms ease-out; 
        -moz-transition:  100ms ease-out; 
@@ -279,10 +279,10 @@ div.make3D.flip180{
             transition:  100ms ease-out; 
 }
 div.large .make3D{
-	top:0;
-	left:0;
-	width:315px;
-	height:480px;
+	inset-block-start:0;
+	inset-inline-start:0;
+	inline-size:315px;
+	block-size:480px;
 	-webkit-transition:  300ms ease-out; 
        -moz-transition:  300ms ease-out; 
          -o-transition:  300ms ease-out; 
@@ -293,10 +293,10 @@ div.large .make3D{
 .stats-container{
 	background:#fff;	
 	position:absolute;
-	top:382px;
-	left:0;
-	width: 252px;
-	height: 300px;
+	inset-block-start:382px;
+	inset-inline-start:0;
+	inline-size: 252px;
+	block-size: 300px;
 	padding: 24px 40px 35px 32px;
 	-webkit-transition: all 200ms ease-out; 
        -moz-transition: all 200ms ease-out; 
@@ -304,7 +304,7 @@ div.large .make3D{
             transition: all 200ms ease-out;
 }
 .make3D.animate .stats-container{
-	top:265px;
+	inset-block-start:265px;
 	-webkit-transition: all 200ms ease-out; 
        -moz-transition: all 200ms ease-out; 
          -o-transition: all 200ms ease-out; 
@@ -321,17 +321,17 @@ div.large .make3D{
 	padding:2px 0 20px 0;
 }
 .stats-container .product_price{
-	float:right;
+	float:inline-end;
 	color:#5ff7d2;
 	font-size:22px;
 	font-weight:600;
 }
 .image_overlay{
 	position:absolute;
-	top:0;
-	left:0; 
-	width:100%;
-	height:100%;
+	inset-block-start:0;
+	inset-inline-start:0; 
+	inline-size:100%;
+	block-size:100%;
 	background:#5ff7d2;
 	opacity:0;	
 }
@@ -354,15 +354,15 @@ div.large .make3D{
 	color:#969699;
 	font-size:14px;
 	display:block;
-	margin-bottom:8px;
+	margin-block-end:8px;
 }
 .add_to_cart{	
 	position:absolute;
-	top:80px;
-	left:50%;
-	width:152px;
+	inset-block-start:80px;
+	inset-inline-start:50%;
+	inline-size:152px;
 	font-size:15px;
-	margin-left:-78px;
+	margin-inline-start:-78px;
 	border:2px solid #fff;
 	color:#fff;	
 	text-align:center;
@@ -390,11 +390,11 @@ div.large .make3D{
 }
 .view_gallery{	
 	position:absolute;
-	top:144px;
-	left:50%;
-	width:152px;
+	inset-block-start:144px;
+	inset-inline-start:50%;
+	inline-size:152px;
 	font-size:15px;
-	margin-left:-78px;
+	margin-inline-start:-78px;
 	border:2px solid #fff;
 	color:#fff;	
 	text-align:center;
@@ -421,21 +421,21 @@ div.large .make3D{
             transition: all 200ms ease-out; 		
 }
 div.colors div{
-	margin-top:3px;
-	width:15px; 
-	height:15px; 	
-	margin-right:5px;
-	float:left;
+	margin-block-start:3px;
+	inline-size:15px; 
+	block-size:15px; 	
+	margin-inline-end:5px;
+	float:inline-start;
 }
 div.colors div span{
-	width:15px; 
-	height:15px; 
+	inline-size:15px; 
+	block-size:15px; 
 	display:block;
 	border-radius:50%;
 }
 div.colors div span:hover{
-	width:17px;
-	height:17px;
+	inline-size:17px;
+	block-size:17px;
 	margin:-1px 0 0 -1px;
 }
 div.c-blue span{background:#6e8cd5;}
@@ -443,16 +443,16 @@ div.c-red span{background:#f56060;}
 div.c-green span{background:#44c28d;}
 div.c-white span{
 	background:#fff;
-	width:14px;
-	height:14px; 
+	inline-size:14px;
+	block-size:14px; 
 	border:1px solid #e8e9eb;
 }
 div.shadow{
-	width:335px;height:520px;
+	inline-size:335px;block-size:520px;
 	opacity:0;
 	position:absolute;
-	top:0;
-	left:0;
+	inset-block-start:0;
+	inset-inline-start:0;
 	z-index:3;
 	display:none;
 	background: -webkit-linear-gradient(left,rgba(0,0,0,0.1),rgba(0,0,0,0.2));
@@ -470,19 +470,19 @@ div.shadow{
 }
 .flip-back{
 	position:absolute;
-	top:20px;
-	right:20px;
-	width:30px;
-	height:30px;
+	inset-block-start:20px;
+	inset-inline-end:20px;
+	inline-size:30px;
+	block-size:30px;
 	cursor:pointer;
 }
 .cx, .cy{
 	background:#d2d5dc;
 	position:absolute;
-	width:0px;
-	top:15px;
-	right:15px;
-	height:3px;
+	inline-size:0px;
+	inset-block-start:15px;
+	inset-inline-end:15px;
+	block-size:3px;
 	-webkit-transition: all 250ms ease-in-out;
 	   -moz-transition: all 250ms ease-in-out;
 		-ms-transition: all 250ms ease-in-out;
@@ -498,8 +498,8 @@ div.shadow{
 			transition: all 250ms ease-in-out;
 }
 .cx.s1, .cy.s1{	
-	right:0;	
-	width:30px;	
+	inset-inline-end:0;	
+	inline-size:30px;	
 	-webkit-transition: all 100ms ease-out;
 	   -moz-transition: all 100ms ease-out;
 		-ms-transition: all 100ms ease-out;
@@ -527,8 +527,8 @@ div.shadow{
 			transition: all 100ms ease-out;
 }
 .cx.s1{	
-	right:0;	
-	width:30px;	
+	inset-inline-end:0;	
+	inline-size:30px;	
 	-webkit-transition: all 100ms ease-out;
 	   -moz-transition: all 100ms ease-out;
 		-ms-transition: all 100ms ease-out;
@@ -556,48 +556,48 @@ div.shadow{
 			transition: all 100ms ease-out;
 }
 .carousel{
-	width:315px;
-	height:500px;
+	inline-size:315px;
+	block-size:500px;
 	overflow:hidden;
 	position:relative;
 }
 .carousel ul{
 	position:absolute;
-	top:0;
-	left:0;
+	inset-block-start:0;
+	inset-inline-start:0;
 }
 .carousel li{
-	width:315px;
-	height:500px;
-	float:left;
+	inline-size:315px;
+	block-size:500px;
+	float:inline-start;
 	overflow:hidden;	
 }
 .carousel img{
-	margin-top: -22px;
-	width: 110%;
+	margin-block-start: -22px;
+	inline-size: 110%;
 }
 .arrows-perspective{
-	width:315px;
-	height:55px;
+	inline-size:315px;
+	block-size:55px;
 	position: absolute;
-	top: 218px;
+	inset-block-start: 218px;
 	transform-style: preserve-3d;
     transition: transform 5s;
 	perspective: 335px;
 }
 .carouselPrev, .carouselNext{
-	width: 50px;
-	height: 55px;
+	inline-size: 50px;
+	block-size: 55px;
 	background: #ccc;
 	position: absolute;	
-	top:0;
+	inset-block-start:0;
 	transition: all 200ms ease-out; 
 	opacity:0.9;
 	cursor:pointer;
 }
 .carouselNext{
-	top:0;
-	right: -26px;
+	inset-block-start:0;
+	inset-inline-end: -26px;
 	-webkit-transform: rotateY( -117deg );
          -moz-transform: rotateY( -117deg );
            -o-transform: rotateY( -117deg );
@@ -606,7 +606,7 @@ div.shadow{
 
 }
 .carouselNext.visible{
-		right:0;
+		inset-inline-end:0;
 		opacity:0.8;
 		background: #fff;
 		-webkit-transform: rotateY( 0deg );
@@ -616,8 +616,8 @@ div.shadow{
 			  transition: all 200ms ease-out; 
 }
 .carouselPrev{		
-	left:-26px;
-	top:0;
+	inset-inline-start:-26px;
+	inset-block-start:0;
 	-webkit-transform: rotateY( 117deg );
          -moz-transform: rotateY( 117deg );
            -o-transform: rotateY( 117deg );
@@ -626,7 +626,7 @@ div.shadow{
 
 }
 .carouselPrev.visible{
-		left:0;
+		inset-inline-start:0;
 		opacity:0.8;
 		background: #fff;
 		-webkit-transform: rotateY( 0deg );
@@ -636,12 +636,12 @@ div.shadow{
 			  transition: all 200ms ease-out; 
 }
 .carousel .x, .carousel .y{
-	height:2px;
-	width:15px;
+	block-size:2px;
+	inline-size:15px;
 	background:#5ff7d2;
 	position:absolute;
-	top:31px;
-	left:17px;
+	inset-block-start:31px;
+	inset-inline-start:17px;
 	-ms-transform: rotate(45deg); 
 	-webkit-transform: rotate(45deg); 
 	transform: rotate(45deg);	
@@ -650,7 +650,7 @@ div.shadow{
 	-ms-transform: rotate(135deg); 	
 	-webkit-transform: rotate(135deg); 
 	transform: rotate(135deg);		
-	top:21px;
+	inset-block-start:21px;
 }
 .carousel .carouselNext .x{
 	-ms-transform: rotate(45deg); 	
@@ -664,10 +664,10 @@ div.shadow{
 }
 div.floating-cart{
 	position:absolute;
-	top:0;
-	left:0; 
-	width:315px;	
-	height:480px;
+	inset-block-start:0;
+	inset-inline-start:0; 
+	inline-size:315px;	
+	block-size:480px;
 	background:#fff;
 	z-index:200;
 	overflow:hidden;
@@ -676,12 +676,12 @@ div.floating-cart{
 }
 
 div.floating-cart .stats-container{display:none;}
-div.floating-cart .product-front{width:100%; top:0; left:0;}
+div.floating-cart .product-front{inline-size:100%; inset-block-start:0; inset-inline-start:0;}
 div.floating-cart.moveToCart{
-	left: 75px !important;
-	top: 55px !important;
-	width: 47px;
-	height: 47px;	
+	inset-inline-start: 75px !important;
+	inset-block-start: 55px !important;
+	inline-size: 47px;
+	block-size: 47px;	
 	-webkit-transition: all 800ms ease-in-out;
 	   -moz-transition: all 800ms ease-in-out;
 		-ms-transition: all 800ms ease-in-out;
@@ -689,10 +689,10 @@ div.floating-cart.moveToCart{
  		    transition: all 800ms ease-in-out; 
 }
 body.MakeFloatingCart div.floating-cart.moveToCart{	
-	left: 90px !important;
-	top: 140px !important;
-	width: 21px;
-	height: 22px;
+	inset-inline-start: 90px !important;
+	inset-block-start: 140px !important;
+	inline-size: 21px;
+	block-size: 22px;
 	box-shadow:0px 5px 31px -1px rgba(0, 0, 0, 0);
 	-webkit-transition: all 200ms ease-out;
 	   -moz-transition: all 200ms ease-out;
@@ -704,8 +704,8 @@ div.cart-icon-top{
 	position:absolute;
 	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/cart.png") 0 -3px no-repeat;
 	margin:0;
-	width:21px;
-	height:3px;
+	inline-size:21px;
+	block-size:3px;
 	z-index:1;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -716,16 +716,16 @@ div.cart-icon-top{
 	inset-inline-start: 120px;
 >>>>>>> b3cea88a8b9bf32553dce0661cb4aa229ea3fffe
 =======
-	top: 140px;
-	left: 130px;
+	inset-block-start: 140px;
+	inset-inline-start: 130px;
 >>>>>>> a17d3976da9be8e47f27424d166d593fd65d681c
 }
 div.cart-icon-bottom{
 	position:absolute;
 	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/cart.png") 0 -3px no-repeat;
 	margin:0;
-	width:21px;
-	height:19px;
+	inline-size:21px;
+	block-size:19px;
 	z-index:1;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -736,17 +736,17 @@ div.cart-icon-bottom{
 	inset-inline-start: 120px;
 >>>>>>> b3cea88a8b9bf32553dce0661cb4aa229ea3fffe
 =======
-	top: 143px;
-	left: 130px;
+	inset-block-start: 143px;
+	inset-inline-start: 130px;
 >>>>>>> a17d3976da9be8e47f27424d166d593fd65d681c
 }
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}
 body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}	
 .cart-item{	
 	padding: 11px 0 5px 110px;
-	height: 62px;
-	width: 210px;
-	margin-left: -45px;
+	block-size: 62px;
+	inline-size: 210px;
+	margin-inline-start: -45px;
 	position:relative;
 	background:#fff;
 	-webkit-transition: all 1000ms ease-out;
@@ -758,21 +758,21 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 .cart-item.flash{background:#fffeb0;}
 .cart-item-border{
 	position:absolute;
-	bottom:0;
-	left:45px;
+	inset-block-end:0;
+	inset-inline-start:45px;
 	background:#edeff0;
-	height: 1px;
-	width: 230px;
+	block-size: 1px;
+	inline-size: 230px;
 }
 .cart-item .img-wrap{
-	width:50px; 
-	height:50px; 
+	inline-size:50px; 
+	block-size:50px; 
 	overflow:hidden;
 	border:1px solid #edeff0;
-	float:left;
-	margin-left:-65px;	
+	float:inline-start;
+	margin-inline-start:-65px;	
 }
-.cart-item img{width:100%; position:relative;top:-10px;}
+.cart-item img{inline-size:100%; position:relative;inset-block-start:-10px;}
 .cart-item strong{color:#5ff7d2; font-size:16px;}
 .cart-item span{
 	color: #393c45;
@@ -782,10 +782,10 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 
 .cart-item .delete-item{
 	background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/delete-item.png") 0 0 no-repeat;
-	width:15px;
-	height:15px;
-	float:right;
-	margin-right:18px;
+	inline-size:15px;
+	block-size:15px;
+	float:inline-end;
+	margin-inline-end:18px;
 	display:none;
 }
 .cart-item:hover .delete-item{display:block;cursor:pointer}
@@ -793,10 +793,10 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 
 #info{
 	position: absolute;
-	top: 20px;
-	left: 676px;
+	inset-block-start: 20px;
+	inset-inline-start: 676px;
 	text-align: center;
-	width: 413px;
+	inline-size: 413px;
 
 }
 #info p{font-size:15px; padding:3px;color:#b1b1b3}
@@ -816,16 +816,16 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 	inset-inline-start: 181px;
 >>>>>>> b3cea88a8b9bf32553dce0661cb4aa229ea3fffe
 =======
-	top: 137px;
-	left: 181px;
+	inset-block-start: 137px;
+	inset-inline-start: 181px;
 >>>>>>> a17d3976da9be8e47f27424d166d593fd65d681c
 	color: #5ff7d2;
 	display:none;
 }
 
 .product.large{
-	width:639px;
-	margin-bottom:25px;
+	inline-size:639px;
+	margin-block-end:25px;
 	overflow:hidden;
 	-webkit-transition: all 500ms ease-in-out;
 	   -moz-transition: all 500ms ease-in-out;
@@ -840,18 +840,18 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 /* ---------------- */
 .floating-image-large{
 	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
+	inset-block-start:0;
+	inset-inline-start:0;
+	inline-size:100%;
 }
 .info-large{
 	  display:none;
 	  position: absolute;
-	  top: 0;
-	  left: 0px;
+	  inset-block-start: 0;
+	  inset-inline-start: 0px;
 	  padding: 42px;
-	  width: 245px;
-	  height: 395px;
+	  inline-size: 245px;
+	  block-size: 395px;
 	  -webkit-transition: all 500ms ease-out;
 	   -moz-transition: all 300ms ease-out;
 		-ms-transition: all 300ms ease-out;
@@ -859,7 +859,7 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
  		    transition: all 300ms ease-out;
 }
 .large .info-large{
-	left: 310px;
+	inset-inline-start: 310px;
 	-webkit-transition: all 300ms ease-out;
 	   -moz-transition: all 300ms ease-out;
 		-ms-transition: all 300ms ease-out;
@@ -878,7 +878,7 @@ div.sku{
 	  font-weight: 700;
 	  color: #d0d0d0;
 	  font-size: 12px;
-	  padding-top: 11px;
+	  padding-block-start: 11px;
 }
 div.sku strong{
 	color:#000;
@@ -887,7 +887,7 @@ div.sku strong{
 	font-size: 34px;
     font-weight: 600;
     color: #5ff7d2;
-    margin-top: 21px;
+    margin-block-start: 21px;
 }
 .price-big span{
 	color:#d0d0d0;
@@ -903,8 +903,8 @@ div.sku strong{
 	  font-weight: 700;
 	  padding: 10px;
 	  font-family: "Open Sans", sans-serif;
-	  width: 246px;
-	  margin-top: 38px;	
+	  inline-size: 246px;
+	  margin-block-start: 38px;	
 	  -webkit-transition: all 200ms ease-out;
 	   -moz-transition: all 200ms ease-out;
 		-ms-transition: all 200ms ease-out;
@@ -926,35 +926,35 @@ div.sku strong{
     color: #262626;
     text-transform: uppercase;
     font-size: 14px;
-	clear:left;
-	margin-top:20px;
+	clear:inline-start;
+	margin-block-start:20px;
     font-weight: 700;
-	margin-bottom:3px;
+	margin-block-end:3px;
 }
 
 
 .colors-large{
-	margin-bottom:38px;
+	margin-block-end:38px;
 }
 .colors-large li{
-	float:left;
+	float:inline-start;
 	list-style:none;
-	margin-right:7px;
-	width:16px;
-	height:16px;
+	margin-inline-end:7px;
+	inline-size:16px;
+	block-size:16px;
 }
 .colors-large li a{
-	float:left;
-	width:16px;
-	height:16px;
+	float:inline-start;
+	inline-size:16px;
+	block-size:16px;
 	border-radius:50%;
 }
 .colors-large li a:hover{
-	width:19px;
-	height:19px;
+	inline-size:19px;
+	block-size:19px;
 	position:relative;
-	top:-1px;
-	left:-1px;
+	inset-block-start:-1px;
+	inset-inline-start:-1px;
 }
 
 .sizes-large{
@@ -974,7 +974,7 @@ div.sku strong{
     font-size: 9pt;
     text-align: center;
     color: #333;
-    margin-top: 40px;
+    margin-block-start: 40px;
 
 }
 .credit span:before{
@@ -998,3 +998,44 @@ div.sku strong{
     position: absolute;
     margin: 3px;
 }
+
+.checked {
+	color: orange;
+  }
+
+  /* Style the form element with a border around it */
+form {
+	border: 4px solid #f1f1f1;
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .container {
+	padding: 20px;
+	background-color: #f1f1f1;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+	margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	border: none;
+  }
+  
+  input[type=submit]:hover {
+	opacity: 0.8;
+  }

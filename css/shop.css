@@ -747,8 +747,8 @@ div.cart-icon-top{
 	inset-block-start: 47px;
 	inset-inline-start: 120px;
 =======
-	top: 50px;
-	left: 120px;
+	inset-block-start: 50px;
+	inset-inline-start: 120px;
 >>>>>>> b3cea88a8b9bf32553dce0661cb4aa229ea3fffe
 }
 div.cart-icon-bottom{
@@ -762,8 +762,8 @@ div.cart-icon-bottom{
 	inset-block-start: 50px;
 	inset-inline-start: 120px;
 =======
-	top: 53px;
-	left: 120px;
+	inset-block-start: 53px;
+	inset-inline-start: 120px;
 >>>>>>> b3cea88a8b9bf32553dce0661cb4aa229ea3fffe
 }
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}
@@ -837,8 +837,8 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 	inset-block-start: 43px;
 	inset-inline-start: 181px;
 =======
-	top: 45px;
-	left: 181px;
+	inset-block-start: 45px;
+	inset-inline-start: 181px;
 >>>>>>> b3cea88a8b9bf32553dce0661cb4aa229ea3fffe
 	color: #5ff7d2;
 	display:none;

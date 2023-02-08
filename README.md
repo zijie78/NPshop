@@ -1,13 +1,18 @@
 # NPshop
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
 
-Essentially, this part is your sales pitch.
+Our chosen topic is E-Commerce and we’ve decided to create a Ngee Ann shop website that sells Ngee Ann merchandise. This idea came about when we were deciding on an idea for out e-commerce shop and realised that Ngee Ann doesn’t have an official website for their merchandise. Hence, we decided that we wanted to create an original website called “NPShop” with an interesting concept to help promote and increase sales of merchandise. 
+<br>
+Our concept is to make an online shop that enables people to earn points every time they purchase an item from the shop. With the points, users can exchange it for vouchers which can be used to purchase items at a cheaper price. Users can also save up their points to exchange it for items in the store.  There is also a login function where users can login with their username and password. If students do not have an np account, they can sign up on the spot by using their np email and password. On successful login, the message “successful login! Welcome back” will pop-up. On unsuccessful login, the message “Unsuccessful login! Please try again…”.  When checking out, students can enter their given discount voucher to get their items for discounted price.
+<br>
+Our interpretation of the theme is to create a gamified shopping website to promote and sell items. Hence, we are implementing some gamification features such as games to earn vouchers. Through promoting Ngee Ann’s merchandise, we can also promote the school by including a page about Ngee Ann when users first enter the website in the Homepage.
+
 
 <h2>Design Process</h2>
 
 For the checkpoint 1, we have created the various html, css and javascript. We have decided to add the navigation bar on all the html except for login.html and signup.html because those 2 html will be for user to create or sign in their account to continue using the website. We have implemented a few features such as games (random gift generator), flip card for the contact and many other features. We have also created the wireframes for the html in both desktop and mobile view.
 
+For checkpoint 2, we have created  games, and a profile for users. We also added a signup and signin page and a shopping page. For the games, 
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:

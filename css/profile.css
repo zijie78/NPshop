@@ -1,6 +1,12 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.50);
+  --overlay-color: rgba(136, 139, 198, 0.85);
+  --menu-speed: 0.75s;
+}
+
 body {
     block-size: 100vh;
-    background: linear-gradient(135deg, #5db2bf, #340f8a);
+    background: lightsteelblue;
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -8,6 +14,7 @@ body {
 }
 
 .student-profile .card {
+
   border-radius: 10px;
 }
 
@@ -35,4 +42,8 @@ body {
     font-size: 14px;
     padding: 5px 10px;
     color: #000;
+}
+
+.pt-4, .py-4 {
+  padding-top: 6.5rem !important;
 }

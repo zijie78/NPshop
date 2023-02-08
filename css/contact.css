@@ -1,3 +1,10 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.50);
+    --overlay-color: rgba(24,39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+
 *{
     box-sizing: border-box;
 }

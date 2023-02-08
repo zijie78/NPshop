@@ -24,13 +24,15 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    block-size: 100vh;
-    background: linear-gradient(135deg, #a3e7f1, #f3e6e6);
+    block-size: auto;
+    background: #a3e7f1;
   }
+
+  
   .wrapper {
-    inline-size: 90%;
+    inline-size: 500px;
     max-inline-size: 34.37em;
-    max-block-size: 90vh;
+    max-block-size: 100vh;
     background-color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -38,8 +40,10 @@
     inset-inline-start: 50%;
     padding: 3em;
     border-radius: 1em;
-    box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
-  }
+    box-shadow: 0 4em 5em rgb(27 8 53 / 20%);
+}
+
+
   .container {
     position: relative;
     inline-size: 100%;
@@ -79,6 +83,14 @@
     inset-block-start: 45%;
     inset-inline-end: -8%;
   }
+
+  .image1 {
+    position: relative;
+    inline-size: 15em;
+    inset-block-start: 45%;
+    inset-inline-end: -8%;
+  }
+
   #final-value {
     font-size: 1.5em;
     text-align: center;
@@ -108,5 +120,23 @@
 
 .btn:hover{
     opacity: 0.7;
+}
+
+.container5 {
+  height: 0px;
+  left: 400px;
+  position: relative;
+  width: 100%;
+  top: 400px;
+}
+
+.column {
+  float: left;
+  width: 0;
+}
+
+.column1 {
+  float: left;
+  width: 0;
 }
 

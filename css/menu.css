@@ -1,8 +1,15 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.50);
+  --overlay-color: rgba(136, 139, 198, 0.85);
+  --menu-speed: 0.75s;
+}
+
+
 .menu-wrap{
     position:fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 101;
 }
 
 .menu-wrap .toggler{

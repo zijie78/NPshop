@@ -1,289 +1,131 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shop</title>
-  <link rel="stylesheet" href="css/shop.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!--Link To CSS-->
+    <link rel="stylesheet" href="css/shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <audio autoplay="" loop="" src="music/Joy To The World - DJ Williams.mp3"></audio>
-<!-- partial:index.partial.html -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-<div id="wrapper">
-<div class="cart-icon-top">
-</div>
+    <!--Header-->
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">NP Shop</a>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
 
-<div class="cart-icon-bottom">
-</div>
-
-<div id="checkout">
-	CHECKOUT
-</div>
-
-<div id="header">	
-	<ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="cart.html">CART</a></li>
-        <li><a href="game.html">GAME</a></li>
-        <li><a href="contact.html">CONTACT</a></li> 
-        <li><a href="profile.html">PROFILE</a></li>                                             
-    </ul>		
-</div>
-
-<div id="sidebar">
-	<h3>CART</h3>
-    <div id="cart">
-    	<span class="empty">No items in cart.</span>       
-    </div>
-
-<div id="grid">
-    <div class="product">
-    	<div class="info-large">
-        </div>
-        <div class="make3D">
-            <div class="product-front">
-                <div class="shadow"></div>
-                <img src="image/Products/plainw1.jpg" alt="" />
-                <div class="image_overlay"></div>
-                <div class="add_to_cart">Add to cart</div>
-                <div class="view_gallery">View gallery</div>                
-                <div class="stats">        	
-                    <div class="stats-container">
-                        <span class="product_price">$10</span>
-                        <span class="product_name">NGEE ANN POLYTECHNIC PLAIN TEE</span>    
-                        <p>T-Shirt</p>                                            
-                        
-                        <div class="product-options">
-                        <strong>SIZES</strong>
-                        <span>S, M, L, XL, XXL</span>
-                        
-                    </div>        
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>  
-                    </div>                         
                 </div>
+                <!--Total Quantity-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Purchase Button-->
+                <button type="button" class="btn-buy">Place Order</button>
+                <!--Cart Close-->
+                <i class='bx bx-x' id="close-cart"></i>
             </div>
-            
-            <div class="product-back">
-                <div class="shadow"></div>
-                <div class="carousel">
-                    <ul class="carousel-container">
-                        <li><img src="image/Products/plainw1.jpg" alt="" /></li>
-                    </ul>
-                    <div class="arrows-perspective">
-                        <div class="carouselPrev">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                        <div class="carouselNext">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-back">
-                    <div class="cy"></div>
-                    <div class="cx"></div>
-                </div>
-            </div>	  
-        </div>	
+        </div>
+    </header>
+    <!--Shop-->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+    <!--Content-->
+    <div class="shop-content">
+        <!--Box 1-->
+        <div class="product-box">
+            <img src="image/Products/mdf1.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN WHITE T-SHIRT</h2>
+            <span class="price">$10</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 2-->
+        <div class="product-box">
+            <img src="image/Products/mdf2.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN BLACK T-SHIRT</h2>
+            <span class="price">$10</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 3-->
+        <div class="product-box">
+            <img src="image/Products/nb1.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN NAVY BLUE T-SHIRT</h2>
+            <span class="price">$12</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 4-->
+        <div class="product-box">
+            <img src="image/Products/nb2.1.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN BLUE T-SHIRT</h2>
+            <span class="price">$12</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 5-->
+        <div class="product-box">
+            <img src="image/Products/bjersey1.jpg" alt="" class="product-img">
+            <h2 class="product-title">BLACK JERSEY WITH RED STRIPE</h2>
+            <span class="price">$15</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 6-->
+        <div class="product-box">
+            <img src="image/Products/p3.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN CLASSIC BLACK T-SHIRT</h2>
+            <span class="price">$12</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 7-->
+        <div class="product-box">
+            <img src="image/Products/plainw1.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN CLASSIC T-SHIRT</h2>
+            <span class="price">$12</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+        <div class="product-box">
+            <img src="image/Products/polo2.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN BLACK POLO T-SHIRT</h2>
+            <span class="price">$19</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 9-->
+        <div class="product-box">
+            <img src="image/Products/polo3.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN BLUE POLO T-SHIRT</h2>
+            <span class="price">$19</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 10-->
+        <div class="product-box">
+            <img src="image/Products/cg2.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN CHROME GOLD T-SHIRT</h2>
+            <span class="price">$13</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 11-->
+        <div class="product-box">
+            <img src="image/Products/wb1.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN WINDBREAKER</h2>
+            <span class="price">$20</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 12-->
+        <div class="product-box">
+            <img src="image/Products/rg1.jpg" alt="" class="product-img">
+            <h2 class="product-title">NGEE ANN ROSE GOLD T-SHIRT</h2>
+            <span class="price">$13</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
     </div>
-    
-    
-    <div class="product">
-    <div class="info-large">
-        </div>
-        <div class="make3D">
-            <div class="product-front">
-                <div class="shadow"></div>
-                <img src="image/Products/mdf1.jpg" alt="" />
-                <div class="image_overlay"></div>
-                <div class="add_to_cart">Add to cart</div>
-                <div class="view_gallery">View gallery</div>
-                <div class="stats">        	
-                    <div class="stats-container">
-                        <span class="product_price">$10</span>
-                        <span class="product_name">NGEE ANN POLYTECHNIC CLASSIC TEE</span>    
-                        <p>T-Shirt</p>                                            
-                        
-                        <div class="product-options">
-                        <strong>SIZES</strong>
-                        <span>S, M, L, XL, XXL</span>
-                    </div>          
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>              
-                    </div>                         
-                </div>
-            </div>
-            
-            <div class="product-back">
-                <div class="shadow"></div>
-                <div class="carousel">
-                    <ul class="carousel-container">
-                        <li><img src="image/Products/mdf1.jpg" alt="" /></li>
-                        <li><img src="image/Products/mdf2.jpg" alt="" /></li>
-                    </ul>
-                    <div class="arrows-perspective">
-                        <div class="carouselPrev">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                        <div class="carouselNext">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-back">
-                    <div class="cy"></div>
-                    <div class="cx"></div>
-                </div>
-            </div>	  
-        </div>	
-    </div>
-    
-    <div class="product">
-    <div class="info-large">
-        </div>
-        <div class="make3D">        
-            <div class="product-front">
-                <div class="shadow"></div>
-                <img src="image/Products/nb1.jpg" alt="" />
-                <div class="image_overlay"></div>
-                <div class="add_to_cart">Add to cart</div>
-                <div class="view_gallery">View gallery</div>
-                <div class="stats">        	
-                    <div class="stats-container">
-                        <span class="product_price">$10</span>
-                        <span class="product_name">NGEE ANN POLYTECHNIC CLASSIC T-SHIRT</span>    
-                        <p>T-Shirt</p>                                            
-                        
-                        <div class="product-options">
-                        <strong>SIZES</strong>
-                        <span>S, M, L, XL, XXL</span>
-                    </div>               
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>         
-                    </div>                         
-                </div>
-            </div>
-            
-            <div class="product-back">
-                <div class="shadow"></div>
-                <div class="carousel">
-                    <ul class="carousel-container">
-                        <li><img src="image/Products/nb1.jpg" alt="" /></li>
-                        <li><img src="image/Products/nb2.jpg" alt="" /></li>
-                    </ul>
-                    <div class="arrows-perspective">
-                        <div class="carouselPrev">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                        <div class="carouselNext">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-back">
-                    <div class="cy"></div>
-                    <div class="cx"></div>
-                </div>
-            </div>	  
-        </div>	
-    </div>
-    
-    
-    <div class="product">
-    <div class="info-large">
-        </div>
-        <div class="make3D">
-            <div class="product-front">
-                <div class="shadow"></div>
-                <img src="image/Products/nb2.1.jpg" alt="" />
-                <div class="image_overlay"></div>
-                <div class="add_to_cart">Add to cart</div>
-                <div class="view_gallery">View gallery</div>
-                <div class="stats">        	
-                    <div class="stats-container">
-                        <span class="product_price">$10</span>
-                        <span class="product_name">NGEE ANN POLYTECHNIC CLASSIC T-SHIRT v2</span>    
-                        <p>T-Shirt</p>                                            
-                        
-                        <div class="product-options">
-                        <strong>SIZES</strong>
-                        <span>S, M, L, XL, XXL</span>
-                    </div>                 
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>       
-                    </div>                         
-                </div>
-            </div>
-            
-            <div class="product-back">
-                <div class="shadow"></div>
-                <div class="carousel">
-                    <ul class="carousel-container">
-                        <li><img src="image/Products/nb2.1.jpg" alt="" /></li>
-                        <li><img src="image/Products/nb2.2.jpg" alt="" /></li>
-                    </ul>
-                    <div class="arrows-perspective">
-                        <div class="carouselPrev">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                        <div class="carouselNext">
-                            <div class="y"></div>
-                            <div class="x"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-back">
-                    <div class="cy"></div>
-                    <div class="cx"></div>
-                </div>
-            </div>	  
-        </div>	
-    </div>
-
-    <form action="action_page.php">
-        <div class="container">
-          <h2>Subscribe to us for Newest Updates!</h2>
-          <p>it's free...</p>
-        </div>
-      
-        <div class="container" style="background-color:white">
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Email address" name="mail" required>
-          <label>
-            <input type="checkbox" checked="checked" name="subscribe"> Get Promotion Updates
-          </label>
-        </div>
-      
-        <div class="container">
-          <input type="submit" value="Subscribe">
-        </div>
-      </form>
-
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- partial -->
-  <script  src="js/shop.js"></script>
-
+    </section>
+<script src="js/shop.js"></script>
 </body>
 </html>

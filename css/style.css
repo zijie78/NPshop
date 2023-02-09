@@ -84,6 +84,11 @@
     transition: all 0.4s ease;
 }
 
+
+
+  
+  
+
 @media (max-inline-size: 1080px){
 	.menu-wrap .menu > div {
         background: var(--overlay-color);

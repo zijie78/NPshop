@@ -138,10 +138,10 @@ Bugs:
 The hamburger menu overlay doesnt go full screen on mobile view :/
 
 <h2>Credits</h2>
-The photos used in this site were obtained from ngee anns website and google.
+The photos used in this site were obtained from ngee anns website and google. Some of the html ideas were inspired from YouTube videos such as the hamburger menu, the login, contact and shop. 
 
 <h2>Acknowledgements</h2>
-I received inspiration for this project from lazada.
+I received inspiration for this project from Lazada/Shopee.
 
 <h2>Collaborators</h2>
 Goh Zi Jie (zijie78)

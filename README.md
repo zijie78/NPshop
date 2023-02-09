@@ -12,6 +12,7 @@ Our interpretation of the theme is to create a gamified shopping website to prom
 <br>
 <br>
 
+
 <h2>Design Process</h2>
 <p><em>Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.</em></p>
 <br>
@@ -24,12 +25,22 @@ For checkpoint 2, we have created  games, and a profile for users. We also added
 <p>
 For checkpoint 3, we have finished all the features and mobile views. We made sure that the files are properly arranged and in lower caps. We also ensured that everything was working well. </p>
 
+<br>
+<p>
+As a shopper, I want to be able to purchase Ngee Ann merchandise all at the same place easily, as well as support my school directly. It would also be awesome if Ngee Ann had vouchers for shoppers to use in their purchase, and games as well to make the app more interesting and fun. </p>
+<br>
+<p>
+Shoppers include Students, Alumnis, Teachers, as well as anyone that wants to purchase Ngee Ann merchandise such as students from other schools. </p>
+<br>
+<p>
+As a Student, it would want the items to be more affordable someway, thus having coupons would come in handy when making purchases. Since i might forget my password at times as im quite busy, it would be great to be able to change my login and contact details easily.</p>
 
-
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-
-As a user type, I want to perform an action, so that I can achieve a goal.
+<br>
+<p>
+As a student from another school, it's not easy to buy Ngee Ann merch as it's hard to find my way there since i dont know the school well. Having an official website to buy from would be the best.</p>
+<br>
+<p>The link below directs you to our wireframe:</p>
+<iframe width="1080" height="2016" src="https://xd.adobe.com/embed/3d18e22f-edc5-4451-b929-bc9994ce73de-684b/" frameborder="0" allowfullscreen></iframe>
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
 
 <h2>Features</h2>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/menu.css">
+    <title>Login</title>
+</head>
+<body>
+    <audio autoplay="" loop="" src="music/Joy To The World - DJ Williams.mp3"></audio>
+
+	<div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="login.html">Login</a></li>
+                         <li><a href="shop.html">Shop</a></li>
+                         <li><a href="cart.html">My Cart</a></li>
+                         <li><a href="game.html">Game</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                         <li><a href="profile.html">Profile</a></li>   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Login or Sign in to your account</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<input type="text" placeholder="Username" id="signupusername"/>
+			<input type="email" placeholder="Email" id="signupemail"/>
+			<input type="password" placeholder="Password" id="signuppassword"/>
+			<button id="signupbutton">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign In</h1>
+			<input type="text" placeholder="Username" id="signinusername"/>
+			<input type="password" placeholder="Password" id="signinpassword"/>
+			<button id="signinbutton">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Login your account here </h1>
+				<p>Ready to login? Click the button below.</p>
+				<button class="ghost" id="signIn">Sign In</button>
+				<br>
+				<p class="ghost" id="return" a href="index.html">Return to Menu</p>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Create your account here</h1>
+				<p>Ready to create an account? Click the button below.</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+				<br>
+				<p class="ghost" id="return">Return to Menu</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -40,7 +40,7 @@ As a Student, it would want the items to be more affordable someway, thus having
 As a student from another school, it's not easy to buy Ngee Ann merch as it's hard to find my way there since i dont know the school well. Having an official website to buy from would be the best.</p>
 <br>
 <p>The link below directs you to our wireframe:</p>
-https://xd.adobe.com/embed/3d18e22f-edc5-4451-b929-bc9994ce73de-684b/
+https://1drv.ms/u/s!AntFCXedf7nC-RMeLcDtlfzHTvFg?e=Yg0ZQd
 <br>
 <p>To add one, shoppers are usually busy and on the move, thus, having a mobile view of the website it important to make it more convenient.</p>
 

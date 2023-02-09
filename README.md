@@ -40,11 +40,27 @@ As a Student, it would want the items to be more affordable someway, thus having
 As a student from another school, it's not easy to buy Ngee Ann merch as it's hard to find my way there since i dont know the school well. Having an official website to buy from would be the best.</p>
 <br>
 <p>The link below directs you to our wireframe:</p>
-<iframe width="1080" height="2016" src="https://xd.adobe.com/embed/3d18e22f-edc5-4451-b929-bc9994ce73de-684b/" frameborder="0" allowfullscreen></iframe>
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
+https://xd.adobe.com/embed/3d18e22f-edc5-4451-b929-bc9994ce73de-684b/
+<br>
+<p>To add one, shoppers are usually busy and on the move, thus, having a mobile view of the website it important to make it more convenient.</p>
+
+<br>
+<br>
 
 <h2>Features</h2>
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+<p>Home: A brief description about what topic we chose for this assignment and why. Also a brief description of our project.</p>
+<br>
+<p>Profile: Users can change their information here such as email address, phone number, username etc, they are also able to view the coupons they own. </p>
+<br>
+<p>Login: Users can login or sign up at this page.</p>
+<br>
+<p>Shop: Users can browse through merchandise here and add them to cart. They can also view cart and remove items. They are also able to opt to checkout.</p>
+<br>
+<p>Game: Users can win coupons here through swapping their points for spin the wheel tickets, and using the tickets to win prizes.</p>
+<br>
+<p>Contact: Users can directly contact Ngee Anns shop when they have any queries.</p>
+<br>
+<br>
 
 <h3>Existing Features</h3>
 Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -52,35 +68,80 @@ Feature 1 - allows users X to achieve Y, by having them fill out Z
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 <h3>Features Left to Implement</h3>
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+<br>
+<p><em>Another feature idea</em></p>
+<br>
+<p>1. adding a self collection option for students to collect the goods without paying mailing fee
+  2. adding more games for users to select
+  3. adding pop-up message at the games function to tell users what they have won
+  <p>
+    
+ <p><em>Technologies Used</em></p>
+<p>In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.</p>
+  <br>
+<p> Languages used consist of javascript, html, and css. Frameworks include all mobile devices. javascript was used to make more complicated features, for example games, which required the use of angles and randomization.</p>
 
-<h2>Programming Languages Used</h2>
-The project uses JQuery to simplify DOM manipulation.
 
 <h2>Testing</h2>
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+
+All pages:
+There is music!
+
+Home Page:
+Go to the "Home" Page and click on "Read More" to read more about Ngee Ann Poly.
 
 Contact form:
 Go to the "Contact Us" page
 Try to submit the empty form and verify that an error message about the required fields appears
 Try to submit the form with an invalid email address and verify that a relevant error message appears
 Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+Profile form:
+Go to the "Profile" page
+Try to submit the empty form and verify that an error message about the required fields appears
+Try to submit the form with an invalid email address and verify that a relevant error message appears
+Try to submit the form with all inputs valid and verify that a success message appears.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Games:
+Go to the "Games" page
+Try spinning the wheel, it should spin
+When the wheel stops, it should land on a random number.
+The messages below the wheel will change accordingly:
+before spin: "Spin the wheel"
+during spin: "Good Luck!"
+after spin: "You got ____"
+
+Shop:
+Go to the "Shop" page
+try selecting an item, it will move slightly since it is animated.
+try adding an item to cart by pressing the bag icon below.
+Select the bag icon at the top of the page.
+The item you just added should be displayed.
+The costs of the item should be displayed at the bottom too.
+When you change the quantity, the total payable should change accordingly too.
+When you remove the item, it will be removed and total would become 0 again.
+When you choose to checkout, a display message would state "your oder has been placed"
+
+Login:
+Go to the "Login" page
+there are two panels, sign up and login.
+When u select either the button sign up or login, the panel will change accordingly.
+Try to submit the empty form and verify that an error message about the required fields appears
+Try to submit the form with an invalid email address and verify that a relevant error message appears
+Try to submit the form with all inputs valid and verify that a success message appears.
+The return to home link should bring you back to home.
+
+Framework:
+Everything looks the same on different screens and browers, just smaller and positioned vertically than horizontally.
+
+Bugs:
+The hamburger menu overlay doesnt go full screen on mobile view :/
 
 <h2>Credits</h2>
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
+The photos used in this site were obtained from ngee anns website and google.
 
 <h2>Acknowledgements</h2>
-I received inspiration for this project from X
+I received inspiration for this project from lazada.
 
 <h2>Collaborators</h2>
 Goh Zi Jie (zijie78)
